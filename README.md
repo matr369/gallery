@@ -22,15 +22,15 @@ The main idea of this project is to understand how to work with Docker.
 
 - Clone Repository
 - Enter project directory
-- run docker-compose -f docker-compose-local.yml build
-- run docker-compose -f docker-compose-local.yml up
+- Run `docker-compose -f docker-compose-local.yml build`
+- Run `docker-compose -f docker-compose-local.yml up`
 - Open [http://localhost:3008](http://localhost:3008) to view it in the browser.
 
 ### Production mode
 
 - Clone Repository
 - Enter project directory
-- Run docker-compose up
+- Run `docker-compose up`
 - Open [http://localhost:3008](http://localhost:3008) to view it in the browser.
 
 ### Docker Images
