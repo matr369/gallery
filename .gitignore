@@ -7,3 +7,5 @@ client/.idea/
 
 server/node_modules/
 server/.idea/
+
+.DS_Store

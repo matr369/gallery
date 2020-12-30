@@ -6,18 +6,18 @@ services:
     image: mongo:latest
     restart: always
     volumes:
-      - mongodata:/data/db
+      - ./data:/data/db #to save mongodb
     ports:
       - "27017:27017"
   server:
-    image: matr369/gallery_server:latest
+    build: server/
     restart: always
     ports:
       - "3007:3007"
     links:
       - mongo
   client:
-    image: matr369/gallery_client:latest
+    build: client/
     restart: always
     ports:
       - "3008:3008"
@@ -25,5 +25,3 @@ services:
       - PORT=3008
     links:
       - server
-volumes:
-  mongodata:
