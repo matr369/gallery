@@ -4,6 +4,7 @@ data/*
 
 client/node_modules/
 client/.idea/
+client/.eslintcache
 
 server/node_modules/
 server/.idea/
