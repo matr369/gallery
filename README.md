@@ -10,7 +10,8 @@ The main idea of this project is to understand how to work with Docker.
 ## Tech Stack Used
 
 - React.js
-- Node.js
+- Express.js
+- Mongoose
 - Mongodb
 - Docker
 - Docker-compose
