@@ -1,0 +1,27 @@
+version: "3"
+services:
+  mongo:
+    container_name: mongo
+    hostname: mongo
+    image: mongo:latest
+    restart: always
+    volumes:
+      - ./data:/data/db #to save mongodb
+    ports:
+      - "27017:27017"
+  server:
+    build: server/
+    restart: always
+    ports:
+      - "3007:3007"
+    links:
+      - mongo
+  client:
+    build: client/
+    restart: always
+    ports:
+      - "3008:3008"
+    environment:
+      - PORT=3008
+    links:
+      - server
