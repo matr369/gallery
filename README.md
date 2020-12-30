@@ -1,11 +1,11 @@
-#Image Gallery project
+# Image Gallery project
 
 This is the simplest Image Gallery project.
 User can upload and delete image from the gallery.
 
 The main idea of this project is to understand how to work with Docker.
 
-##Tech Stack Used
+## Tech Stack Used
 
 - React.js
 - Node.js
@@ -13,9 +13,9 @@ The main idea of this project is to understand how to work with Docker.
 - Docker
 - Docker-compose
 
-##How to run project
+## How to run project
 
-###Dev mode
+### Dev mode
 
 - Clone Repository
 - Enter project directory
