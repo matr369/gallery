@@ -1,4 +1,6 @@
-# Image Gallery project
+# Image Gallery project 
+
+[https://github.com/matr369/gallery](https://github.com/matr369/gallery)
 
 This is the simplest Image Gallery project.
 User can upload and delete image from the gallery.
