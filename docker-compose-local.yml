@@ -6,7 +6,7 @@ services:
     image: mongo:latest
     restart: always
     volumes:
-      - ./data:/data/db #to save mongodb
+      - mongodata:/data/db
     ports:
       - "27017:27017"
   server:
@@ -14,6 +14,9 @@ services:
     restart: always
     ports:
       - "3007:3007"
+    volumes:
+      - ./server:/server
+      - /server/node_modules
     links:
       - mongo
   client:
@@ -21,7 +24,12 @@ services:
     restart: always
     ports:
       - "3008:3008"
+    volumes:
+      - ./client:/client
+      - /client/node_modules
     environment:
       - PORT=3008
     links:
       - server
+volumes:
+  mongodata:
