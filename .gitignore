@@ -1,5 +1,6 @@
 .idea/
 data/*
+!data/
 
 client/node_modules/
 client/.idea/

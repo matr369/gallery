@@ -1,0 +1,23 @@
+.image-container {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.image-container .remove-icon {
+    position: absolute;
+    right: 5px;
+    top: 2px;
+    cursor: pointer;
+    border-radius: 20px;
+    padding: 5px;
+    width: 16px;
+    text-align: center;
+}
+.image-container .remove-icon:hover {
+    background-color: #d9e0e1;
+}
+.image-container .image {
+    width: 200px;
+    height: 200px;
+}
