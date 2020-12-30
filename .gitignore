@@ -1,6 +1,6 @@
 .idea/
 data/*
-!data/
+!data/.gitkeep
 
 client/node_modules/
 client/.idea/
